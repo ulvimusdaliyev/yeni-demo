@@ -1,0 +1,42 @@
+:root {
+    --title-size: clamp(1rem, 6vw, 2.5rem);
+    --text-size: clamp(0.300rem, 4vw, 1.35rem);
+    --link-size: clamp(0.6rem, 4vw, 1.35rem);
+    --icon-size: clamp(1rem, 8vw, 1.62rem);
+    --box-color: #f4ddc5;
+    --button-hover: #FFFBE8;
+    --button-color: #F4DDC5;
+    --button-font-size: 21px;
+    --download-button-color: #dec1a2;
+    --text-color: #3D3929;
+    --main-color: #FFFBE8;
+    --link-color: black;
+    --link-hover-color: #b59878;
+    --line-color: #8C866D;
+    --book-text: 13px;
+    --book-title: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+}
+
+@media (max-width:1024px) {
+    .btn {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid var(--line-color);
+    }
+}
